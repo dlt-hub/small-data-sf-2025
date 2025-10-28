@@ -1,6 +1,6 @@
 # Keep It Simple and Scalable
 
-This repository hosts the material for a workshop given at [Small Data SF](https://www.smalldatasf.com/) 2025.
+> This repository hosts the material for a workshop given at [Small Data SF](https://www.smalldatasf.com/) 2025.
 
 During this workshop, you will use the Python library [dlt](https://github.com/dlt-hub/dlt) to build an extract, load, transform (ELT) pipeline for the [official GitHub REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28).
 
