@@ -13,9 +13,25 @@ We'll go through the full lifecyle of a data project:
 
 We'll introduce and suggest several tools throughout the workshop: dlt, [LLM scaffoldings](https://dlthub.com/workspace), [Continue](https://github.com/continuedev/continue), [duckdb](https://github.com/duckdb/duckdb), [Motherduck](https://motherduck.com/), [marimo](https://github.com/marimo-team/marimo/tree/main), [ibis](https://github.com/ibis-project/ibis), and more!
 
+## Workshop format
+
+This workshop will alternate between:
+- **Tutorial**: speakers explain and demonstrate concepts
+- **Exercise**: participants code to solve a task
+
+Most exercises are open-ended and participants are invited to explore their own path (e.g., ingest data from different endpoints). It's also possible to follow along the speaker during exercise segments.
+
+To avoid getting stuck, this repository includes several checkpoints to resume from.
+
 ## Repository structure
 
-All of the workshop material is in this repository. 
+All of the workshop material is in this repository. A brief overview:
+
+- `README.md` contains all of the written instructions for the workshop. See the `## Setup` section for installation instructions 
+- `pyproject.toml` and `uv.lock` define Python dependencies
+- `.continue/` contains MCP configuration for the Continue IDE extension
+- `.cursor/` contains MCP configuration for the Cursor IDE
+- `.copilot/` contains MCP configuration for the GitHub Copilot extension
 
 
 ## Setup
