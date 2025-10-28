@@ -31,7 +31,7 @@ All of the workshop material is in this repository. A brief overview:
 - `pyproject.toml` and `uv.lock` define Python dependencies
 - `.continue/` contains MCP configuration for the Continue IDE extension
 - `.cursor/` contains MCP configuration for the Cursor IDE
-- `.copilot/` contains MCP configuration for the GitHub Copilot extension
+- `.vscode/` contains MCP configuration for the GitHub Copilot extension
 
 
 ## Setup
@@ -120,15 +120,4 @@ During the workshop, we will use the [VSCode](https://code.visualstudio.com/) ex
 3. Search for `continue` and install the extension (by `continue.dev`, identifier is `continue.continue`)
 4. Go to the Continue chat panel. You can find it by doing `CTRL + P` (command palette) and execute `Continue: Focus Continue Chat`
 5. Under `Models`, set your LLM API key. We suggest select models X or Y `TODO complete steps`
-6. Under `Tools`, click the `(+)` to add an MCP server. Pase the following configuration
-  ```yaml
-  # TODO
-  mcpServers:
-    - command: uvx
-      name: dlt
-      args:
-        - dlt
-        - mcp
-        - run
-  ```
-7. You should see the MCP server loaded with some tools.
+6. Under `Tools`, you should see the MCP server loaded with some tools if you properly setup your Python environment.
