@@ -1,0 +1,5 @@
+output/
+.dlt/secrets.toml
+*.duckdb
+.ipynb_checkpoints
+
