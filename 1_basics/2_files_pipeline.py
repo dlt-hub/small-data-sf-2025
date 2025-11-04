@@ -14,8 +14,8 @@ payments_resource = (
 ).with_name("payments")  # assign a name to the new resource
 
 # Pipeline and destination
-jaffle_ingest_pipe = dlt.pipeline(
-    "jaffleshop_rest",
+jaffle_files_pipe = dlt.pipeline(
+    "jaffleshop_files",
     destination="duckdb",
     dataset_name="jaffleshop",
 )
@@ -23,4 +23,5 @@ jaffle_ingest_pipe = dlt.pipeline(
 
 if __name__ == "__main__":
     # Calling `.run()` the Resource executes the pipeline
-    jaffle_ingest_pipe.run(payments_resource)
+    load_info = jaffle_files_pipe.run(payments_resource)
+    print(load_info)

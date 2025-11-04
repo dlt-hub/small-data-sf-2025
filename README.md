@@ -60,20 +60,22 @@ All of the workshop material is in this repository. A brief overview:
     python -m venv .venv && .venv/Scripts/activate
     ```
 
-2. Install Python dependecies
+2. Install Python dependencies
 
     ```shell
-    pip install .
+    pip install -r requirements.txt
     ```
 
 ### dltHub
 During the workshop, we will use the Python library [dlt](https://github.com/dlt-hub/dlt). It is open source and under the Apache 2.0 license. We will also use the Python library dlthub, which includes paid features. A 30-day trial license can be self-issued anonymously for development, education, and CI operations purposes.
 
-1. Install the `dlt` library and command line tool: `pip install dlt`
-2. Install the `dlthub` library: `pip install dlthub`
-3. Self-issue a license for `dlthub` and the specified features: `dlt license issue dlthub.transformation`
-4. It should automatically store the token. If it prints a warning, follow the instructions.
-5. Verify the token is properly set: `dlt license info`. The result should look like
+0. Setup the Python environment, which includes `dlt` and `dlthub`
+1. Self-issue a license for `dlthub` and the specified features: 
+  ```shell
+  dlt license issue dlthub.transformation
+  ```
+2. It should automatically store the token. If it prints a warning, follow the instructions.
+3. Verify the token is properly set: `dlt license info`. The result should look like
    ```shell
    Searching dlt license in environment or secrets toml
    License found

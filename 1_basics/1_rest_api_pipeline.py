@@ -34,7 +34,7 @@ jaffleshop_rest_source = rest_api_source(
 # Pipeline and Destination: use `dlt.pipeline` to create a pipeline
 # with a name and assign it a destination. We use shorthand destination.
 # It's equivalent to calling: `dlt.destinations.duckdb()`
-jaffle_ingest_pipe = dlt.pipeline(
+jaffle_rest_pipe = dlt.pipeline(
     "jaffleshop_rest",
     destination="duckdb",
     dataset_name="jaffleshop",
@@ -42,7 +42,8 @@ jaffle_ingest_pipe = dlt.pipeline(
 
 if __name__ == "__main__":
     # Calling `.run()` on the Source executes the pipeline
-    jaffle_ingest_pipe.run(rest_api_source)
+    load_info = jaffle_rest_pipe.run(jaffleshop_rest_source)
+    print(load_info)
 
     # Dataset: the dataset can be retrieved directly from the pipeline
-    # jaffleshop_rest_dataset = jaffle_ingest_pipe.dataset()
+    # jaffleshop_rest_dataset = jaffle_rest_pipe.dataset()

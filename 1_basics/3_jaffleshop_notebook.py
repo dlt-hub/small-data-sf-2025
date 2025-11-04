@@ -5,10 +5,9 @@ marimo edit ./1_basics/3_jaffleshop_notebook.py
 ```
 """
 
-
 import marimo
 
-__generated_with = "0.16.3"
+__generated_with = "0.17.2"
 app = marimo.App(width="medium")
 
 with app.setup:
@@ -133,12 +132,8 @@ def _():
 
 @app.cell
 def _():
-    files_directory = pathlib.Path(__file__).parent
-    return (files_directory,)
+    files_directory = pathlib.Path(__file__).parent / "data"
 
-
-@app.cell
-def _(files_directory):
     payments_files_resource = filesystem(
         bucket_url=str(files_directory), file_glob="*payments.parquet"
     )
