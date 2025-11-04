@@ -67,7 +67,7 @@ All of the workshop material is in this repository. A brief overview:
     ```
 
 ### dltHub
-During the workshop, we will use the Python library [dlt](https://github.com/dlt-hub/dlt). It is open source and under the Apache 2.0 license. We will also use the Python library dlthub.
+During the workshop, we will use the Python library [dlt](https://github.com/dlt-hub/dlt). It is open source and under the Apache 2.0 license. We will also use the Python library dlthub, which includes paid features. A 30-day trial license can be self-issued anonymously for development, education, and CI operations purposes.
 
 1. Install the `dlt` library and command line tool: `pip install dlt`
 2. Install the `dlthub` library: `pip install dlthub`
