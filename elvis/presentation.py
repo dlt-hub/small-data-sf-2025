@@ -10,7 +10,6 @@ import os
 
 os.environ["DATA_WRITER__DISABLE_COMPRESSION"] = "True"
 dlt.config["data_writer.disable_compression"] = True
-# small-data-sf
 
 pipeline: dlt.Pipeline = dlt.pipeline(
     pipeline_name="pipeline_name",
