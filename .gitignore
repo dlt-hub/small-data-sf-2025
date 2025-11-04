@@ -4,4 +4,4 @@ output/
 *.wal
 .ipynb_checkpoints
 .setup/
-
+**__marimo__/
